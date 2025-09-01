@@ -24,10 +24,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Install Bun
+        run: npm install -g bun
       - name: Install Dependencies
-        run: npm ci
+        run: bun install
       - name: Build Quartz
-        run: npx quartz build
+        run: bunx quartz build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
