@@ -1,6 +1,5 @@
 ---
-title: FFmpeg: Complete Command Reference
-
+title: FFmpeg - Complete Command Reference
 ---
 
 **FFmpeg** is a free and open-source software project consisting of a large suite of libraries and programs for handling video, audio, and other multimedia files and streams. This wiki serves as a comprehensive reference for FFmpeg commands and usage patterns.
