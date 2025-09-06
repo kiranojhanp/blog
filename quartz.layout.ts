@@ -5,11 +5,31 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [
+    Component.Comments({
+      provider: "giscus",
+      options: {
+        // from data-repo
+        repo: "kiranojhanp/blog",
+        // from data-repo-id
+        repoId: "R_kgDOPn9hPg",
+        // from data-category
+        category: "Announcements",
+        // from data-category-id
+        categoryId: "DIC_kwDOPn9hPs4CvDZW",
+        // from data-lang
+        lang: "en",
+        // where to put the comment input box relative to the comments
+        // defaults to 'bottom'
+        inputPosition: "top",
+        themeUrl: "https://www.kojha.com.np/static/giscus",
+      },
+    }),
+  ],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      GitHub: "https://github.com/kiranojhanp/blog/",
+      // "Discord Community": "https://discord.gg/cRFFHYye7t",
     },
   }),
 }
@@ -43,7 +63,7 @@ export const defaultContentPageLayout: PageLayout = {
   right: [
     Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
-    Component.Backlinks(),
+    // Component.Backlinks(),
   ],
 }
 

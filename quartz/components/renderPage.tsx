@@ -260,7 +260,7 @@ export function renderPage(
               </div>
             </div>
             {RightComponent}
-            <Footer {...componentData} />
+            {/* <Footer {...componentData} /> */}
           </Body>
         </div>
       </body>
