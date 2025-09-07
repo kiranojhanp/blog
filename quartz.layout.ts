@@ -1,24 +1,23 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
-import { SimpleSlug } from "./quartz/util/path"
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
   afterBody: [
-    Component.Comments({
-      provider: "giscus",
-      options: {
-        repo: "kiranojhanp/blog",
-        repoId: "R_kgDOPn9hPg",
-        category: "Announcements",
-        categoryId: "DIC_kwDOPn9hPs4CvDZW",
-        lang: "en",
-        inputPosition: "top",
-        themeUrl: "https://www.kojha.com.np/static/giscus",
-      },
-    }),
+    // Component.Comments({
+    //   provider: "giscus",
+    //   options: {
+    //     repo: "kiranojhanp/blog",
+    //     repoId: "R_kgDOPn9hPg",
+    //     category: "Announcements",
+    //     categoryId: "DIC_kwDOPn9hPs4CvDZW",
+    //     lang: "en",
+    //     inputPosition: "top",
+    //     themeUrl: "https://www.kojha.com.np/static/giscus",
+    //   },
+    // }),
   ],
   footer: Component.Footer({
     links: {
