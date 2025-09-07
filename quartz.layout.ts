@@ -27,6 +27,18 @@ export const sharedPageComponents: SharedLayout = {
   }),
 }
 
+const SharedExplorerComponent = Component.Explorer({
+  filterFn: (node) => {
+    // set containing names of everything you want to filter out
+    const omit = new Set(["glossary"])
+
+    // can also use node.slug or by anything on node.data
+    // note that node.data is only present for files that exist on disk
+    // (e.g. implicit folder nodes that have no associated index.md)
+    return !omit.has(node.displayName.toLowerCase())
+  },
+})
+
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
@@ -51,17 +63,7 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer({
-      filterFn: (node) => {
-        // set containing names of everything you want to filter out
-        const omit = new Set(["glossary"])
-
-        // can also use node.slug or by anything on node.data
-        // note that node.data is only present for files that exist on disk
-        // (e.g. implicit folder nodes that have no associated index.md)
-        return !omit.has(node.displayName.toLowerCase())
-      },
-    }),
+    SharedExplorerComponent,
   ],
   right: [
     Component.Graph(),
@@ -85,7 +87,7 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    SharedExplorerComponent,
   ],
-  right: [],
+  right: [Component.DesktopOnly(Component.TableOfContents())],
 }
