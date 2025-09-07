@@ -1,5 +1,6 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+import { SimpleSlug } from "./quartz/util/path"
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -9,18 +10,11 @@ export const sharedPageComponents: SharedLayout = {
     Component.Comments({
       provider: "giscus",
       options: {
-        // from data-repo
         repo: "kiranojhanp/blog",
-        // from data-repo-id
         repoId: "R_kgDOPn9hPg",
-        // from data-category
         category: "Announcements",
-        // from data-category-id
         categoryId: "DIC_kwDOPn9hPs4CvDZW",
-        // from data-lang
         lang: "en",
-        // where to put the comment input box relative to the comments
-        // defaults to 'bottom'
         inputPosition: "top",
         themeUrl: "https://www.kojha.com.np/static/giscus",
       },
