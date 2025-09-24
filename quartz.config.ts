@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Hinduism",
+    pageTitle: "Kiran",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -73,7 +73,7 @@ const config: QuartzConfig = {
       Plugin.ObsidianFlavoredMarkdown({
         enableInHtmlEmbed: false,
         parseTags: false,
-        mermaid: true,
+        mermaid: false,
         enableCheckbox: true,
         disableBrokenWikilinks: true,
       }),
