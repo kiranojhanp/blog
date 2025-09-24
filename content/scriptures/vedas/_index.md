@@ -11,7 +11,7 @@ tags:
 comments: false
 ---
 > [!abstract] TL;DR: The Vedas
-> Ancient Sanskrit scriptures (1500-500 BCE) forming [[Hinduism]]'s foundation. Four texts: [[scriptures/vedas/_index | Rigveda]] (hymns), [[Yajurveda]] (rituals), [[Samaveda]] (music), [[Atharvaveda]] (practical knowledge). Each has four layers: [[Samhitas]] (mantras) → [[Brahmanas]] (ritual explanations) → [[Aranyakas]] (symbolic interpretations) → [[Upanishads]] (philosophy introducing [[Brahman]]/[[Atman]]). Transmitted orally for 1000+ years using sophisticated mnemonic techniques. Divides Indian philosophy into orthodox ([[Āstika]]) schools accepting Vedic authority vs heterodox ([[Nāstika]]) like [[Buddhism]]/[[Jainism]] rejecting it. Remains central to Hindu identity and global spiritual thought.
+> Ancient Sanskrit scriptures (1500-500 BCE) forming [[Hinduism]]'s foundation. Four texts: [[scriptures/vedas/rigveda/_index | Rigveda]] (hymns), [[Yajurveda]] (rituals), [[Samaveda]] (music), [[Atharvaveda]] (practical knowledge). Each has four layers: [[Samhitas]] (mantras) → [[Brahmanas]] (ritual explanations) → [[Aranyakas]] (symbolic interpretations) → [[Upanishads]] (philosophy introducing [[Brahman]]/[[Atman]]). Transmitted orally for 1000+ years using sophisticated mnemonic techniques. Divides Indian philosophy into orthodox ([[Āstika]]) schools accepting Vedic authority vs heterodox ([[Nāstika]]) like [[Buddhism]]/[[Jainism]] rejecting it. Remains central to Hindu identity and global spiritual thought.
 
 ## Core Definition & Significance
 
